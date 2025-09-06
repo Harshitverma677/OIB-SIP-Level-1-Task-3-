@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEMPERATURE CONVERTER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TEMPERATURE CONVERTER</h1>
+
+    <div class="input">
+      <h4>Degrees</h4>
+      <form action="index.html" method="post">
+      <input type="number" id="deg" require placeholder="enter the TEMPERATURE">
+      </form>
+    </div>
+
+    <div class="type">
+      <h4>Select type</h4>
+      <form action="index.html" method="post">
+      <select id="temp" required>
+        <option value="celsius">Celsius(°C)</option>
+        <option value="fahrenheit">Fahrenheit(°F)</option>
+        <option value="kelvin">Kelvin(°K)</option>
+      </select>
+      </form>
+    </div>
+
+    <div class="button">`
+      
+      <input type="submit" value="CONVERT" class="click" onclick="convertTemp()">
+    
+    </div>
+
+    <div class="output" id="outputBox">
+    <form action="index.html" method="post">
+      <input type="text" id="result" readonly>
+    </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
